@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YouTube Style Front Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    .navbar {
+      background-color: #212121;
+    }
+
+    .btn-category {
+      background-color: #303030;
+      color: white;
+      margin: 5px;
+      border-radius: 20px;
+    }
+
+    .btn-category:hover {
+      background-color: #3f3f3f;
+    }
+
+    .video-title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .video-info {
+      font-size: 0.875rem;
+      color: #aaaaaa;
+    }
+
+    .ratio {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .video-card {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark px-3">
+    <a
+      class="navbar-brand d-flex align-items-center"
+      href="#"
+      style="gap: 8px"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg"
+        height="30"
+        alt="YouTube"
+        style="display: block"
+      />
+      <span
+        class="text-white fw-bold"
+        style="font-size: 1.25rem; letter-spacing: 1px"
+      ></span>
+    </a>
+    <form class="d-flex w-50" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+  </nav>
+
+  <!-- Categories -->
+  <div class="container-fluid px-3 mt-3">
+    <div class="d-flex flex-wrap">
+      <button class="btn btn-category">All</button>
+      <button class="btn btn-category">Music</button>
+      <button class="btn btn-category">Mixes</button>
+      <button class="btn btn-category">Pakistani dramas</button>
+      <button class="btn btn-category">Reverberation</button>
+      <button class="btn btn-category">Gaming</button>
+      <button class="btn btn-category">News</button>
+      <button class="btn btn-category">Live</button>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <div class="container mt-4">
+    <div class="row g-3">
+      <!-- Repeat for each video -->
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j6.mp4" type="video/mp4" />
+              <source src="j6.ogg" type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Create AI Videos From Text Prompt</div>
+          <div class="video-info">Sponsored · Envato</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j.mp4" type="video/mp4" />
+              <source src="j.ogg" type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Explore Nature Documentary</div>
+          <div class="video-info">National Geographic</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j2.mp4" type="video/mp4" />
+              <source src="j2.mp4"type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Gaming Review Highlights</div>
+          <div class="video-info">GameSpot</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j3.mp4" type="video/mp4" />
+              <source src="j3.ogg" type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Top Music Hits 2024</div>
+          <div class="video-info">Vevo</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j4.mp4" type="video/mp4" />
+              <source src="j4.ogg" type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Latest News Headlines</div>
+          <div class="video-info">CNN</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="video-card">
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="j5.mp4" type="video/mp4" />
+              <source src="j5.ogg" type="video/ogg" />
+            </video>
+          </div>
+          <div class="video-title">Learn Web Development</div>
+          <div class="video-info">freeCodeCamp</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
